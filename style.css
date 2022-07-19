@@ -266,14 +266,16 @@ a {
 @media screen and (min-width:689px) and (max-width:992px) {
 
     /* For blog items */
-    body{
-        width: 100vw;
+    body{ 
         margin: 0 auto;
+        overflow-x: hidden;
+        width: 100vw;
     }
     .container {
         flex-direction: row;
         width: 45.875rem;
         height: 29.8rem;
+        margin: 0 auto;
     }
 
     .header-info {
@@ -326,7 +328,7 @@ a{
         display: flex;
         background: white;
         justify-content: space-between;
-        width: 45.875rem;
+        width: 88.37vw;
         padding: 0;
         margin: 0 auto;
     }
@@ -368,7 +370,7 @@ a{
     }
 
     .footer {
-        width: 52.125rem;
+        width: 100vw;
         height: 21.5625rem;
         text-align: center;
     }
@@ -469,14 +471,14 @@ a{
         flex-direction: column;
         margin: 0 auto;
         padding: 0;
-        width: 334px;
+        width: 89vw;
     }
 
     .nav {
         display: flex;
         flex-direction: column;
         background: white;
-        width: 334px;
+        width: 89vw;
     }
 
     .nav-btn {
@@ -510,7 +512,7 @@ a{
 
 
     .footer {
-        width: 375px;
+        width: 100vw;
         height: 412px;
         text-align: center;
     }
