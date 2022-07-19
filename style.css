@@ -266,6 +266,9 @@ a {
 @media screen and (min-width:689px) and (max-width:992px) {
 
     /* For blog items */
+    body{
+        width: 100vw;
+    }
     .container {
         flex-direction: row;
         width: 47.3125rem;
@@ -401,7 +404,7 @@ a {
 
     /* For blog items */
     body {
-        width: fit-content;
+        width: 100vw;
         overflow-x: hidden;
     }
 
