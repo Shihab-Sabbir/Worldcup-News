@@ -466,7 +466,9 @@ a {
   }
 
   .view-all {
-    display: contents;
+    display: block;
+    width: 100%;
+    margin: 0 37%;
   }
 
   #view-all {
@@ -641,6 +643,7 @@ a {
 
   .view-all {
     display: none;
+ 
   }
 
   /* For blog items */
