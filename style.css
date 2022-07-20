@@ -34,6 +34,7 @@ body {
     border-radius: 30px;
     color: white;
     margin-top: 3.125rem;
+    position: relative;
 }
 
 .header-info {
@@ -49,6 +50,7 @@ body {
 }
 
 .header-info p {
+    margin-top: 1rem;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.625rem;
@@ -73,12 +75,42 @@ body {
     width: 36.3125rem;
     height: 38.3125rem;
     margin-top: 2.0625rem;
+    padding-top: 6.625rem;
     margin-right: 5rem;
 }
 
 .header-image img {
     width: 100%;
 }
+
+/* animation */
+
+@keyframes bounce {
+    0%{top: var(--ball-top-position);}
+    25%{top:50%};
+    50%{top: var(--ball-top-position);}
+    75%{top: 75%;}
+    100%{top: var(--ball-top-position);}
+    
+}
+
+.ball {
+    position: absolute;
+    top: 545px;
+    left: 73%;
+    height: 100px;
+    width: 120px !important;
+    animation-play-state: running;
+}
+
+.container:hover .ball {
+    animation: bounce 2s ease-in-out .5s infinite alternate;
+}
+
+.ball img {
+    width: 100%;
+}
+
 
 .main-body {
     max-width: 82.5625rem;
@@ -107,7 +139,9 @@ body {
     font-size: 20px;
     line-height: 30px;
 }
-
+.btn:hover{
+    transform: scale(1.2);
+}
 .nav-btn:hover {
     background: #DD0000;
     color: white;
@@ -189,12 +223,14 @@ li {
 a {
     text-decoration: none;
 }
+
 .body {
     max-width: 82.5625rem;
     min-height: 40rem;
     margin: 8.125rem auto;
     justify-content: center;
 }
+
 .upcoming-match {
     height: fit-content;
     max-width: 82.5625rem;
@@ -255,27 +291,35 @@ a {
     .container {
         flex-direction: row;
     }
-    .view-all
-    {
+
+    .view-all {
         display: none;
     }
-    
+    /* animation */
+:root {
+    --ball-top-position: 545px;
+}
+.ball{
+    top: var(--ball-top-position);
+}
 }
 
 /* Media Query for Tablet */
 @media screen and (min-width:689px) and (max-width:992px) {
 
     /* For blog items */
-    body{ 
+    body {
         margin: 0 auto;
         overflow-x: hidden;
         width: 100vw;
     }
+
     .container {
         flex-direction: row;
         width: 45.875rem;
         height: 29.8rem;
         margin: 0 auto;
+        position: relative;
     }
 
     .header-info {
@@ -295,21 +339,27 @@ a {
     }
 
     .header-info p {
-        width: 19.75rem;
-        max-height: 3.625rem;
-        margin-top: .875rem;
+        width: 15.75rem;
+        min-height: 3.625rem;
+        margin: .875rem 0;
         font-size: .875rem;
+        white-space: nowrap;
         Overflow: hidden;
         text-overflow: ellipsis;
     }
 
     .header-image {
+        position: absolute;
+        top: 0;
+        left: 40%;
         width: 60%;
-        margin-top: 100px;
+        margin-top: 92px;
+        height: fit-content;
+        padding: 0;
     }
 
     .header-image img {
-        width: 120%;
+        width: 100%;
     }
 
     .main-body {
@@ -320,10 +370,12 @@ a {
         margin: 0 auto;
         padding: 0;
     }
-a{
-    margin: 0;
-    padding: 0;
-}
+
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
     .nav {
         display: flex;
         background: white;
@@ -407,6 +459,15 @@ a{
     .match {
         width: 357px;
     }
+         /* animation */
+        :root {
+        --ball-top-position: 280px;
+                 }
+        .ball{
+        top: var(--ball-top-position);
+        left: 255px;
+        }
+         
 }
 
 /*  Media Query for mobile devices */
@@ -431,7 +492,7 @@ a{
     .header-info {
         width: 258px;
         height: 178px;
-        margin: 1.75rem 2.375rem;
+        margin: .75rem 2.375rem 0 2.375rem ;
     }
 
     .header-info h1 {
@@ -443,7 +504,7 @@ a{
     }
 
     .header-info .btn {
-        margin-top: 0rem;
+        margin-top: -10rem;
         width: 161px;
         height: 40px;
     }
@@ -451,8 +512,9 @@ a{
     .header-info p {
         width: 258px;
         height: 48px;
-        margin-top: .875rem;
+        margin-top: .675rem;
         font-size: .875rem;
+        white-space: nowrap;
         Overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -462,9 +524,13 @@ a{
         height: 245px;
         margin: 0 auto;
     }
-
+.player{
+    position:absolute;
+    top: 210px;
+    left:20px;
+}
     .header-image img {
-        width: 100%;
+        width: 90%;
     }
 
     .main-body {
@@ -548,5 +614,14 @@ a{
     .match {
         width: 20.875rem;
     }
+        /* animation */
+        :root{
+            --ball-top-position:382px
+        }
+        .ball {
+            top: var(--ball-top-position);
+            left: 170px;
+            transform: scale(.8);
+        }
 
 }
