@@ -26,6 +26,7 @@ body {
     flex-direction: row;
 }
 
+/* for header */
 .container {
     display: flex;
     max-width: 82.5625rem;
@@ -83,16 +84,6 @@ body {
     width: 100%;
 }
 
-/* animation */
-
-@keyframes bounce {
-    0%{top: var(--ball-top-position);}
-    25%{top:50%};
-    50%{top: var(--ball-top-position);}
-    75%{top: 75%;}
-    100%{top: var(--ball-top-position);}
-    
-}
 
 .ball {
     position: absolute;
@@ -100,17 +91,21 @@ body {
     left: 73%;
     height: 100px;
     width: 120px !important;
+    opacity: 0.8;
     animation-play-state: running;
 }
 
 .container:hover .ball {
-    animation: bounce 2s ease-in-out .5s infinite alternate;
+    animation: bounce 1s .5s 5 alternate;
 }
 
 .ball img {
     width: 100%;
 }
 
+/* for header */
+
+/* for blog items */
 
 .main-body {
     max-width: 82.5625rem;
@@ -122,7 +117,7 @@ body {
 .nav {
     min-width: 312px;
     max-height: 312px;
-    background: #886d6d;
+    background: #161616;
     border-radius: 10px;
     margin-right: 1.125rem;
     padding: 30px;
@@ -139,9 +134,11 @@ body {
     font-size: 20px;
     line-height: 30px;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.2);
 }
+
 .nav-btn:hover {
     background: #DD0000;
     color: white;
@@ -189,10 +186,18 @@ body {
     margin-bottom: 1.25rem;
 }
 
+.item:hover {
+    background-color: #323131;
+    color: white;
+}
+
 #time {
     margin-right: .625rem;
 }
 
+/* for blog items */
+
+/* for footer */
 .footer {
     width: 100rem;
     height: 27.75rem;
@@ -219,10 +224,21 @@ li {
     margin: 0 .625rem;
 }
 
-/* Upcoming match css */
 a {
     text-decoration: none;
+    color: white;
 }
+
+.social-info ul {
+    font-size: 1.2rem;
+}
+
+.social-info li:hover {
+    transform: scale(1.4);
+}
+/* for footer */
+
+/* Upcoming match css */
 
 .body {
     max-width: 82.5625rem;
@@ -287,7 +303,41 @@ a {
     line-height: 1.25rem;
 }
 
+/* Upcoming match css */
+
+/* animation */
+
+@keyframes bounce {
+    0% {
+        top: var(--ball-top-position);
+    }
+
+    25% {
+        top: 50%
+    }
+
+    ;
+
+    50% {
+        top: var(--ball-top-position);
+    }
+
+    75% {
+        top: 75%;
+    }
+
+    100% {
+        top: var(--ball-top-position);
+    }
+
+}
+
+/* animation */
+
+/* Media Query for desktop */
+
 @media screen and (min-width:993px) {
+    
     .container {
         flex-direction: row;
     }
@@ -295,15 +345,21 @@ a {
     .view-all {
         display: none;
     }
-    
+
     /* animation */
-:root {
-    --ball-top-position: 545px;
+    :root {
+        --ball-top-position: 525px;
+    }
+
+    .ball {
+        top: var(--ball-top-position);
+        transform: scale(1.5);
+    }
+
+    /* animation */
 }
-.ball{
-    top: var(--ball-top-position);
-}
-}
+
+/* Media Query for desktop */
 
 /* Media Query for Tablet */
 @media screen and (min-width:689px) and (max-width:992px) {
@@ -425,6 +481,10 @@ a {
         margin-bottom: 2rem;
     }
 
+    /* For blog items */
+
+    /* for footer */
+
     .footer {
         width: 100vw;
         height: 21.5625rem;
@@ -445,6 +505,8 @@ a {
         margin: 0.5rem 2.625rem;
     }
 
+    /* for footer */
+
     /* for upcoming match items */
 
     .upcoming-match {
@@ -461,23 +523,27 @@ a {
     }
 
     .match {
-        width: 357px;
+        width: 22.3125rem;
     }
-         /* animation */
-        :root {
-        --ball-top-position: 286px;
-                 }
-        .ball{
+
+    /* for upcoming match items */
+    /* animation */
+    :root {
+        --ball-top-position: 17.875rem;
+    }
+
+    .ball {
         top: var(--ball-top-position);
-        left: 255px;
+        left: 15.9375rem;
         transform: scale(.9);
-        }
-         
+    }
+
+    /* animation */
 }
 
 /*  Media Query for mobile devices */
 
-@media screen and (min-width:200px) and (max-width:680px) {
+@media screen and (min-width:0px) and (max-width:680px) {
 
     /* For blog items */
     body {
@@ -489,34 +555,34 @@ a {
     .container {
         flex-direction: column;
         text-align: center;
-        width: 334px;
-        height: 472px;
+        width: 20.875rem;
+        height: 29.5rem;
         margin: 1.5rem auto;
     }
 
     .header-info {
-        width: 258px;
-        height: 178px;
-        margin: .75rem 2.375rem 0 2.375rem ;
+        width: 16.125rem;
+        height: 11.125rem;
+        margin: .75rem 2.375rem 0 2.375rem;
     }
 
     .header-info h1 {
-        width: 228px;
-        height: 66px;
+        width: 14.25rem;
+        height: 4.125rem;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 33px;
+        font-size: 1.375rem;
+        line-height: 2.0625rem;
     }
 
     .header-info .btn {
         margin-top: -10rem;
-        width: 161px;
-        height: 40px;
+        width: 10.0625rem;
+        height: 2.5rem;
     }
 
     .header-info p {
-        width: 258px;
-        height: 48px;
+        width: 16.125rem;
+        height: 3rem;
         margin-top: .675rem;
         font-size: .875rem;
         white-space: nowrap;
@@ -525,15 +591,17 @@ a {
     }
 
     .header-image {
-        width: 233px;
-        height: 245px;
+        width: 14.5625rem;
+        height: 15.3125rem;
         margin: 0 auto;
     }
-.player{
-    position:absolute;
-    top: 210px;
-    left:20px;
-}
+
+    .player {
+        position: absolute;
+        top: 13.125rem;
+        left: 1.25rem;
+    }
+
     .header-image img {
         width: 90%;
     }
@@ -559,7 +627,7 @@ a {
     }
 
     .transfer-items {
-        max-width: 334px;
+        max-width: 20.875rem;
         grid-template-columns: repeat(1, 1fr);
         height: fit-content;
         margin-bottom: 2rem;
@@ -567,7 +635,7 @@ a {
 
     .item {
         width: 100%;
-        height: 380px;
+        height: 23.75rem;
     }
 
     .item-info p {
@@ -575,30 +643,27 @@ a {
         margin-top: 1.875rem;
     }
 
-
-
     .view-all {
         display: contents;
     }
 
+    /* For blog items */
 
+    /* for footer */
     .footer {
         width: 100vw;
-        height: 412px;
+        height: 25.75rem;
         text-align: center;
     }
 
-
-
     .footer-items li {
-        display: inline-block;
+        display: block;
         color: white;
-        margin: 0.5rem 4rem;
+        margin: 0.5rem auto;
     }
 
-    .view-all {
-        display: none;
-    }
+
+    /* for footer */
 
     /* for upcoming match items */
 
@@ -619,14 +684,20 @@ a {
     .match {
         width: 20.875rem;
     }
-        /* animation */
-        :root{
-            --ball-top-position:384px
-        }
-        .ball {
-            top: var(--ball-top-position);
-            left: 170px;
-            transform: scale(.7);
-        }
+
+    /* for upcoming match items */
+
+    /* animation */
+    :root {
+        --ball-top-position: 24rem;
+    }
+
+    .ball {
+        top: var(--ball-top-position);
+        left: 10.625rem;
+        transform: scale(.7);
+    }
+
+    /* animation */
 
 }
