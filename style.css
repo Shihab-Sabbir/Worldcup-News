@@ -658,7 +658,7 @@ a {
     }
 
     .view-all {
-        display: contents;
+        display: none;
     }
 
     /* For blog items */
