@@ -86,7 +86,6 @@ body {
 
 .ball {
   position: absolute;
-  top: 34.0625rem;
   left: 73%;
   height: 6.25rem;
   max-width: 7.5rem;
@@ -413,7 +412,7 @@ a {
 
   .header-image img {
     width: 100%;
-    top: 0;
+    top: 18.125rem;
   }
 
   .main-body {
@@ -522,21 +521,18 @@ a {
   /* animation */
  @keyframes bounce {
     0%{top:75%;}
-    20%{top:35%;}
+    20%{top:25%;}
     40%{top: 75%;}
-    50%{top: 45%;}
+    50%{top: 35%;}
     60%{top: 75%;}
-    70%{top: 55%;}
+    70%{top: 45%;}
     80%{top: 75%;}
-    90%{top: 65%;}
+    90%{top: 55%;}
     100%{top:75%;}
   }
   .ball {
-    position: absolute;
-    top: 0;
     left: 15.9375rem;
     transform: scale(0.9);
-    overflow: hidden;
   }
 
   /* animation */
