@@ -242,7 +242,7 @@ a {
     font-size: 1.2rem;
 }
 
-.social-info li:hover {
+.social-link-li:hover {
     transform: scale(1.4);
 }
 
