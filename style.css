@@ -32,7 +32,7 @@ body {
     max-width: 82.5625rem;
     height: fit-content;
     background-color: #ae7a7a;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     color: white;
     margin-top: 3.125rem;
     position: relative;
@@ -87,16 +87,16 @@ body {
 
 .ball {
     position: absolute;
-    top: 545px;
+    top: 34.0625rem;
     left: 73%;
-    height: 100px;
-    width: 120px !important;
+    height: 6.25rem;
+    max-width: 7.5rem;
     opacity: 0.8;
     animation-play-state: running;
 }
 
 .container:hover .ball {
-    animation: bounce 1s .5s 5 alternate;
+    animation: bounce 1s .5s 20 alternate;
 }
 
 .ball img {
@@ -113,14 +113,21 @@ body {
     margin: 8.125rem auto;
     justify-content: center;
 }
-
+#blog-link{
+    background: #dd0000;
+    color: white
+}
+#blog-link:hover{
+background: white;
+color: black;
+}
 .nav {
     min-width: 19.5rem;
     max-height: 19.5rem;
     background: #161616;
-    border-radius: 10px;
+    border-radius: .625rem;
     margin-right: 1.125rem;
-    padding: 30px;
+    padding: 1.875rem;
 }
 
 .nav-btn {
@@ -140,8 +147,9 @@ body {
 }
 
 .nav-btn:hover {
-    background: #DD0000;
+    background: #ea7070;
     color: white;
+    transform: scale(1.1);
 }
 
 .transfer-items {
@@ -157,7 +165,7 @@ body {
     width: 19.5rem;
     height: 22.625rem;
     border: .0625rem solid #E8E8E8;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: .625rem .625rem 0 0;
 
 }
 
@@ -237,6 +245,7 @@ a {
 .social-info li:hover {
     transform: scale(1.4);
 }
+
 /* for footer */
 
 /* Upcoming match css */
@@ -246,6 +255,10 @@ a {
     min-height: 40rem;
     margin: 8.125rem auto;
     justify-content: center;
+}
+#upcoming-link {
+    background: #dd0000;
+    color: white
 }
 
 .upcoming-match {
@@ -338,7 +351,7 @@ a {
 /* Media Query for desktop */
 
 @media screen and (min-width:993px) {
-    
+
     .container {
         flex-direction: row;
     }
@@ -349,7 +362,7 @@ a {
 
     /* animation */
     :root {
-        --ball-top-position: 525px;
+        --ball-top-position: 32.8125rem;
     }
 
     .ball {
@@ -382,7 +395,7 @@ a {
 
     .header-info {
         width: 40%;
-        margin: 89px 0px 76px 76px;
+        margin: 5.5625rem 0 4.75rem 4.75rem;
     }
 
     .header-info h1 {
@@ -408,10 +421,10 @@ a {
 
     .header-image {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 40%;
         width: 60%;
-        margin-top: 93px;
+        margin-top: 5.8125rem;
         margin-bottom: 0;
         height: fit-content;
         padding: 0;
@@ -463,8 +476,8 @@ a {
     }
 
     .item {
-        width: 340px;
-        height: 414.21px;
+        width: 21.25rem;
+        height: 25.8881rem;
     }
 
     .item-info p {
