@@ -96,7 +96,7 @@ body {
 }
 
 .container:hover .ball {
-    animation: bounce 1s .5s 20 alternate;
+    animation: bounce 0.8s ease-in-out .5s 20 alternate;
 }
 
 .ball img {
