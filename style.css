@@ -115,8 +115,8 @@ body {
 }
 
 .nav {
-    min-width: 312px;
-    max-height: 312px;
+    min-width: 19.5rem;
+    max-height: 19.5rem;
     background: #161616;
     border-radius: 10px;
     margin-right: 1.125rem;
@@ -124,15 +124,15 @@ body {
 }
 
 .nav-btn {
-    width: 252px;
-    height: 64px;
+    width: 15.75rem;
+    height: 4rem;
     background: white;
-    border-radius: 5px;
+    border-radius: .3125rem;
     color: #161616;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
 }
 
 .btn:hover {
@@ -149,8 +149,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
-    row-gap: 24px;
+    row-gap: 1.5rem;
 }
+
 
 .item {
     width: 19.5rem;
