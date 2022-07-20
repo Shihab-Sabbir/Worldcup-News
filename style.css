@@ -318,7 +318,7 @@ a {
         flex-direction: row;
         width: 45.875rem;
         height: 29.8rem;
-        margin: 0 auto;
+        margin: 2rem auto;
         position: relative;
     }
 
@@ -350,16 +350,18 @@ a {
 
     .header-image {
         position: absolute;
-        top: 0;
+        top: 0px;
         left: 40%;
         width: 60%;
-        margin-top: 92px;
+        margin-top: 93px;
+        margin-bottom: 0;
         height: fit-content;
         padding: 0;
     }
 
     .header-image img {
         width: 100%;
+        top: 0;
     }
 
     .main-body {
@@ -461,11 +463,12 @@ a {
     }
          /* animation */
         :root {
-        --ball-top-position: 280px;
+        --ball-top-position: 286px;
                  }
         .ball{
         top: var(--ball-top-position);
         left: 255px;
+        transform: scale(.9);
         }
          
 }
@@ -486,7 +489,7 @@ a {
         text-align: center;
         width: 334px;
         height: 472px;
-        margin: 0 auto;
+        margin: 1.5rem auto;
     }
 
     .header-info {
@@ -616,12 +619,12 @@ a {
     }
         /* animation */
         :root{
-            --ball-top-position:382px
+            --ball-top-position:384px
         }
         .ball {
             top: var(--ball-top-position);
             left: 170px;
-            transform: scale(.8);
+            transform: scale(.7);
         }
 
 }
